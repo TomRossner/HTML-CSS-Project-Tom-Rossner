@@ -1,0 +1,181 @@
+@use '../main.scss';
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Assistant:wght@200;300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&family=Pattaya&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+    $primaryFontHE: "Open Sans", sans-serif;
+    $secondaryFontHE: "Assistant", sans-serif;
+    $thirdFontHE: "Amatic SC", cursive;
+    $primaryFontEN: "Poppins", sans-serif;
+    $secondaryFontEN: "Pattaya", sans-serif;
+    
+    $color-purple: #9453A6;
+    $color-green: #8CBF3F;
+    $color-yellow: #F2CC0F;
+    $color-black: #0D0D0D;
+    $color-white: #F2F2F2;
+    $color-gray: rgb(63, 63, 63);
+    $color-light-gray: rgb(184, 184, 184);
+    $color-dark-gray: rgb(51, 51, 51);
+    $border: 1px solid red;
+
+
+
+// Contact
+
+.title{
+    margin-top: 2.5rem;
+    // box-shadow: 0 0 8px 0.1px $color-purple;
+}
+
+.container{
+    min-width: 18rem;
+    // max-width: 18rem;
+    // min-height: 25rem;
+    background-color: $color-white;
+    position: relative;
+    margin: 0.5rem auto;
+    border-radius: 20px;
+    padding: 1em 2em 3em 2em;
+    box-shadow: 0 0 5px 0.2px $color-purple;
+}
+
+.input{
+    display: inline-flex;
+    margin: 1.2rem 0;
+    width: 100%;
+    height: 1.3rem;
+    align-items: center;
+    text-align: center;
+    line-height: 16px;
+}
+
+label{
+    font-size: 0.9rem;
+    display: flex;
+    flex: 1;
+    font-family: $secondaryFontHE;
+    text-align: center;
+    color: $color-purple;
+}
+
+.input input{
+    height: 1.1rem;
+    display: inline-block;
+    align-self: center;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1.5px solid $color-purple;
+    text-overflow: ellipsis;
+    color: $color-black;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.btn-container{
+    margin-top: 2rem;
+}
+
+.btn{
+    display: flex;
+    // border: 1.5px solid $color-purple;
+    border-radius: 15px;
+    width: 8rem;
+    height: 2rem;
+    align-items: center;
+    color: $color-purple;
+    font-weight: 500;
+    margin: 0 auto;
+    background-color: white;
+    justify-content: center;
+    transform: scale(1);
+    transition: background-color 0.3s ease-out, box-shadow 0.3s ease;
+    box-shadow: 0 0 3px 0.05px $color-purple;
+}
+
+.btn:hover{
+    // background-color: #9453a617;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    box-shadow: 0 0 5px 1px $color-purple;
+    transform: scale(1.03);
+}
+
+.btn p{
+    padding: 0 0.2px 0 0.2px;
+    transition: transform 0.2s ease-out;
+    font-family: $primaryFontHE;
+}
+
+#textBox{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#textBox textarea{
+    min-height: 6rem;
+    max-height: 6rem;
+    min-width: 10rem;
+    max-width: 11rem;
+    border-radius: 5px;
+    border: 1px solid $color-purple;
+    margin-bottom: 1rem;
+}
+
+footer{
+    bottom: 0;
+}
+
+@media only screen and(min-width: 1024px){
+
+    .title{
+        margin: 2.5rem auto 2rem auto;
+    }
+
+    .container{
+        max-width: 55%;
+    }
+
+    .form-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+        grid-gap: 2rem;
+    }
+
+    .input input{
+        width: 65%;
+    }
+
+    .input label{
+        width: 2rem;
+        display: inline-block;
+    }
+
+    .input:nth-child(3){
+        grid-column-start: span 2;
+    }
+
+    .input:nth-child(3) input{
+        width: 85%;
+    }
+
+    #textBox{
+        grid-column-start: span 2;
+    }
+
+    #textBox textarea{
+        min-width: 20rem;
+        max-width: 25rem;
+        min-height: 10rem;
+        max-height: 15rem;
+    }
+
+    #textBox label{
+        margin-left: 1rem;
+    }
+
+    .btn-container{
+        grid-column-start: span 2;
+    }
+}

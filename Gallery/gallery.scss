@@ -1,0 +1,46 @@
+@use '../main.scss';
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Assistant:wght@200;300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&family=Pattaya&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+    $primaryFontHE: "Open Sans", sans-serif;
+    $secondaryFontHE: "Assistant", sans-serif;
+    $thirdFontHE: "Amatic SC", cursive;
+    $primaryFontEN: "Poppins", sans-serif;
+    $secondaryFontEN: "Pattaya", sans-serif;
+    $color-purple: #9453A6;
+    $color-green: #8CBF3F;
+    $color-yellow: #F2CC0F;
+    $color-black: #0D0D0D;
+    $color-white: #F2F2F2;
+
+    $border: 1px solid red;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    direction: rtl;
+}
+
+
+// Gallery
+
+#carouselExampleIndicators{
+    margin-bottom: 5rem;
+}
+
+.title{
+    margin-top: 2rem;
+}
+
+#ul-footer{
+    padding-left: 0rem !important;
+}
+
+

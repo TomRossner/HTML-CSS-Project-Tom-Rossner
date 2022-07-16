@@ -1,0 +1,235 @@
+@use '../main.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Assistant:wght@200;300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&family=Pattaya&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+    $primaryFontHE: "Open Sans", sans-serif;
+    $secondaryFontHE: "Assistant", sans-serif;
+    $thirdFontHE: "Amatic SC", cursive;
+    $primaryFontEN: "Poppins", sans-serif;
+    $secondaryFontEN: "Pattaya", sans-serif;
+    $color-purple: #9453A6;
+    $color-green: #8CBF3F;
+    $color-yellow: #F2CC0F;
+    $color-black: #0D0D0D;
+    $color-white: #F2F2F2;
+
+    $border: 1px solid red;
+
+
+
+// FAQ
+
+
+.title{
+    margin-top: 2.5rem;
+    // box-shadow: 0 0 8px 0.2px $color-yellow;
+}
+
+.cards{
+    width: 80%;
+    height: 3rem;
+    border: 1px solid $color-white;
+    transition: height 0.3s;
+    position: relative;
+}
+
+.cards.expand{
+    height: 6rem;
+    width: 80%;
+    transition: 0.5s;
+}
+
+.chevron-container{
+    max-height: 3rem;
+    margin-left: 1rem;
+    position: absolute;
+    top: 0;
+}
+
+.cards .bi.bi-chevron-down{
+    padding: 1rem;
+    transform: rotate(0deg);
+    transition: transform 0.5s;
+}
+
+.bi.bi-chevron-down.rotate{
+    transform: rotate(540deg);
+    transition: 0.5s;
+}
+.cards .question{
+    font-family: $primaryFontHE;
+    font-size: 0.9rem;
+    font-weight: 700;
+    background-color: white;    
+    margin-right: 4rem;
+    line-height: 3rem;
+    position: absolute;
+    top: 0;
+}
+
+.answer{
+    font-family: $secondaryFontHE;
+    font-size: 0.9rem;
+    margin-top: 3rem;
+    padding-right: 0.5rem;
+    text-align: right;
+    opacity: 0;
+}
+
+.cards.expand .answer{
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn{
+    0% {opacity: 0;}
+    50% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+
+.more-questions{
+    margin: 2rem auto;
+    text-align: center;
+    align-items: center;
+    height: 9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: $color-white;
+    border-top: 1px solid $color-purple;
+    border-bottom: 1px solid $color-purple;
+    position: relative;
+}
+
+.more-questions h2{
+    font-family: $primaryFontHE;
+    font-size: 1.3rem;
+    margin: 0 auto;
+    color: $color-purple;
+    width: 90%;
+}
+
+.more-questions a{
+    font-family: $thirdFontHE;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: $color-black;
+    font-weight: bold;
+    letter-spacing: 1px;
+    // border: 1px solid $color-purple;
+    border-radius: 40px;
+    padding: 0.2em 1em;
+    // background-color: #8cbf3f48;
+    background-color: white;
+    transform: scale(1);
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 0 3px 0.05px $color-purple;
+}
+
+footer{
+    margin-top: 4rem;
+}
+@media only screen and(max-width: 1920px) {
+    .cards .chevron-container:hover{
+        background-color: #F2CC0F;
+    }
+
+    .cards.border-yellow{
+        border: 1px solid $color-yellow;
+    }
+}
+@media only screen and(min-width: 1024px){
+
+    .logo a img{
+        width: 8%;
+    }
+    .title{
+        margin: 2.5rem auto;
+    }
+
+    .cards .chevron-container:hover{
+        background-color: #F2CC0F;
+    }
+
+    .cards.border-yellow{
+        border: 1px solid $color-yellow;
+    }
+
+    .more-questions a:hover{
+        cursor: pointer;
+        transform: scale(1.03);
+        transition: 0.3s;
+        box-shadow: 0 0 5px 1px $color-purple;
+    }
+}
+
+@media only screen and(min-width: 768px){
+
+    #navLinks li a{
+        padding: 1em 0.5em;
+    }
+
+    .cards{
+        width: 60%;
+        height: 3rem;
+        border: 1px solid $color-white;
+        transition: height 0.3s;
+        position: relative;
+        flex-direction: initial;
+    }
+    
+    .cards.expand{
+        height: 6rem;
+        width: 60%;
+        transition: 0.5s;
+    }
+    
+    .chevron-container{
+        max-height: 3rem;
+        margin-left: 1rem;
+        position: absolute;
+        top: 0;
+
+        height: 3rem;
+        width: 3rem;
+        right: 0;
+    }
+    
+    .cards .bi.bi-chevron-down{
+        padding: 1rem;
+        transform: rotate(0deg);
+        transition: transform 0.5s;
+    }
+    
+    .bi.bi-chevron-down.rotate{
+        transform: rotate(540deg);
+        transition: 0.5s;
+    }
+    .cards .question{
+        font-family: $primaryFontHE;
+        font-size: 0.9rem;
+        font-weight: 700;
+        background-color: white;
+        line-height: 3rem;
+        position: absolute;
+        top: 0;
+        margin-right: 4rem;
+    }
+    
+    .answer{
+        font-family: $secondaryFontHE;
+        font-size: 0.9rem;
+        margin-top: 3rem;
+        padding-right: 0.5rem;
+        text-align: right;
+        opacity: 0;
+    }
+    
+    .cards.expand .answer{
+        opacity: 0;
+        animation-name: fadeIn;
+        animation-duration: 0.4s;
+        animation-fill-mode: forwards;
+    }
+}
