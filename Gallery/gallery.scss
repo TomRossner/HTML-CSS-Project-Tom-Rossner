@@ -1,10 +1,13 @@
-@use '../main.scss';
+@use './main.scss';
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Assistant:wght@200;300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&family=Pattaya&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+    
     $primaryFontHE: "Open Sans", sans-serif;
     $secondaryFontHE: "Assistant", sans-serif;
     $thirdFontHE: "Amatic SC", cursive;
+
     $primaryFontEN: "Poppins", sans-serif;
     $secondaryFontEN: "Pattaya", sans-serif;
+    
     $color-purple: #9453A6;
     $color-green: #8CBF3F;
     $color-yellow: #F2CC0F;
