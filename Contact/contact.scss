@@ -19,6 +19,7 @@
 
 
 // Contact
+
 .main{
     width: 85%;
     padding: 0 1em;
@@ -26,13 +27,10 @@
 
 .title{
     margin-top: 2.5rem;
-    // box-shadow: 0 0 8px 0.1px $color-purple;
 }
 
 .container{
     min-width: 18rem;
-    // max-width: 18rem;
-    // min-height: 25rem;
     background-color: $color-white;
     position: relative;
     margin: 0.5rem auto;
@@ -56,7 +54,7 @@ label{
     display: flex;
     flex: 1;
     font-family: $secondaryFontHE;
-    text-align: center;
+    text-align: right;
     color: $color-purple;
 }
 
@@ -81,7 +79,6 @@ textarea:focus, input:focus{
 
 .btn{
     display: flex;
-    // border: 1.5px solid $color-purple;
     border-radius: 15px;
     width: 8rem;
     height: 2rem;
@@ -97,7 +94,6 @@ textarea:focus, input:focus{
 }
 
 .btn:hover{
-    // background-color: #9453a617;
     transition: all 0.2s ease;
     cursor: pointer;
     box-shadow: 0 0 5px 1px $color-purple;
@@ -129,6 +125,19 @@ textarea:focus, input:focus{
 footer{
     bottom: 0;
     padding-bottom: 1rem;
+}
+
+// Slider
+
+#carouselExampleControls{
+    width: 50%;
+    margin: 3rem auto 5rem auto;
+}
+
+@media only screen and(min-width: 1280px) and(max-width: 1920px){
+    .logo a img{
+        width: 8%;
+    }
 }
 
 @media only screen and(min-width: 768px){
@@ -185,11 +194,9 @@ footer{
     }
 }
 
-@media only screen and(min-width){
+@media only screen and(min-width: 768px){
     .container{
         min-width: 15rem;
-        // max-width: 18rem;
-        // min-height: 25rem;
         background-color: $color-white;
         position: relative;
         margin: 0.5rem auto;

@@ -405,7 +405,7 @@ footer {
     width: 80%;
   }
   .logo a img {
-    width: 10%;
+    width: 8%;
     transform: scale(0.985);
     transition: scale 0.2s;
   }
@@ -1479,7 +1479,7 @@ footer {
 }
 @media only screen and (min-width: 1024px) {
   .logo a img {
-    width: 8%;
+    width: 12%;
   }
   .title {
     margin: 2.5rem auto;

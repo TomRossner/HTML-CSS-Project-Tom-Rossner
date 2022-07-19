@@ -405,7 +405,7 @@ footer {
     width: 80%;
   }
   .logo a img {
-    width: 10%;
+    width: 8%;
     transform: scale(0.985);
     transition: scale 0.2s;
   }
@@ -1385,7 +1385,7 @@ label {
   display: flex;
   flex: 1;
   font-family: "Assistant", sans-serif;
-  text-align: center;
+  text-align: right;
   color: #9453A6;
 }
 
@@ -1458,6 +1458,16 @@ footer {
   padding-bottom: 1rem;
 }
 
+#carouselExampleControls {
+  width: 50%;
+  margin: 3rem auto 5rem auto;
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1920px) {
+  .logo a img {
+    width: 8%;
+  }
+}
 @media only screen and (min-width: 768px) {
   .title {
     margin: 2.5rem auto 2rem auto;
@@ -1500,7 +1510,7 @@ footer {
     grid-column-start: span 2;
   }
 }
-@media only screen and (min-width) {
+@media only screen and (min-width: 768px) {
   .container {
     min-width: 15rem;
     background-color: #F2F2F2;

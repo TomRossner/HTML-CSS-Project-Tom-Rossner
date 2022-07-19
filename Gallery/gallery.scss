@@ -46,4 +46,47 @@ body{
     padding-left: 0rem !important;
 }
 
+.col-lg-4.mb-4{
+    margin-bottom: 0 !important;
+}
+
+@media only screen and(min-width: 1280px) and(max-width: 1920px) {
+    .logo a img{
+        width: 12%;
+    }
+}
+
+@media only screen and(min-width: 992px) and(max-width: 1920px){
+    .col-lg-4.mb-4.mb-lg-0{
+        width: 60%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        padding: 0;
+        margin: 0 auto;
+        place-items: center;
+    }
+
+    .title{
+        text-align: center;
+        margin: 2rem auto 3rem auto;
+    }
+}
+
+@media only screen and(min-width: 820px) {
+    .main{
+        width: 75%;
+    }
+
+    .col-lg-4.mb-4.mb-lg-0{
+        width: 80%;
+        padding: 0;
+        margin: 0 auto;
+        place-items: center;
+    }
+
+    .col-lg-4.mb-4{
+        margin-bottom: 0 !important;
+    }
+}
 

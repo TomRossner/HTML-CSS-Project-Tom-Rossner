@@ -202,17 +202,18 @@ nav{
     order: 1;
 }
 
+// Slider
 
+// #carouselExampleControls{
+//     width: 50%;
+//     margin: 0 auto 5rem auto;
+// }
 
 // Sponsors
 
 
 .sponsors .cards-container{
     direction: ltr;
-    // display: grid;
-    // grid-template-columns: repeat(6, 1fr);
-    // place-items: center;
-    // overflow-wrap: normal;
 }
 
 .sponsors img{
@@ -220,7 +221,6 @@ nav{
     width: 100px;
     margin-left: 0.5rem;
     padding: 0 0.5rem 0 0;
-    // transform: translateX(150%);
 }
 
 .sponsors p{
@@ -420,7 +420,7 @@ footer{
         width: 80%;
     }
     .logo a img{
-        width: 10%;
+        width: 8%;
         transform: scale(0.985);
         transition: scale 0.2s;
     }
@@ -459,8 +459,6 @@ footer{
     #navLinks li{
         opacity: 1;
         padding: 0;
-        // min-width: 30%;
-        // max-width: 35%;
     }
 
     #navLinks li a{
@@ -541,7 +539,7 @@ footer{
         grid-column:span 6;
     }
 
-    .cards{ //copied all cards
+    .cards{
         width: 20rem;
         height: 10rem;
         margin: 2rem auto 0 auto;
@@ -561,7 +559,6 @@ footer{
         min-width: 80px;
         margin-left: 0;
         padding: 1em 0 0 0;
-        // transform: translateX(1rem);
     }
     
     .sponsors p{
@@ -572,7 +569,6 @@ footer{
     
     .cards.expand{
         height: 20rem;
-        // transition: 0.5s;
     }
     
     .cards .cards-content{
@@ -801,7 +797,7 @@ footer{
         grid-column:span 6;
     }
 
-    .cards{ //copied all cards
+    .cards{
         width: 20rem;
         height: 10rem;
         margin: 2rem auto 0 auto;
@@ -821,7 +817,6 @@ footer{
         min-width: 80px;
         margin-left: 0;
         padding: 1em 0 0 0;
-        // transform: translateX(1rem);
     }
     
     .sponsors p{
@@ -832,7 +827,6 @@ footer{
     
     .cards.expand{
         height: 20rem;
-        // transition: 0.5s;
     }
     
     .cards .cards-content{
@@ -992,16 +986,8 @@ footer{
         padding: 1em 0em;
     }
 
-    // .video-container{
-    //     height: 22rem;
-    // }
-
-    // .video-container video{
-    //     margin: -5.2rem 0;
-    // }
 
     .video-container{
-        // height: 9.5rem;
         height: 20vh;
         position: relative;
         overflow: hidden;
@@ -1009,7 +995,6 @@ footer{
     }
     .video-container video{
         width: 100vw;
-        // margin: -2rem 0;
         position: absolute;
         transform: translateY(-15%);
         z-index: -30;
@@ -1036,7 +1021,7 @@ footer{
         grid-column:span 6;
     }
 
-    .cards{ //copied all cards
+    .cards{
         width: 20rem;
         height: 10rem;
         margin: 2rem auto 0 auto;
@@ -1056,7 +1041,6 @@ footer{
         min-width: 80px;
         margin-left: 0;
         padding: 1em 0 0 0;
-        // transform: translateX(1rem);
     }
     
     .sponsors p{
@@ -1067,7 +1051,6 @@ footer{
     
     .cards.expand{
         height: 20rem;
-        // transition: 0.5s;
     }
     
     .cards .cards-content{
@@ -1227,19 +1210,7 @@ footer{
         z-index: 999;
     }
 
-    // .video-container{ //copied
-    //     height: 18rem;
-    //     overflow: hidden;
-    //     align-items: center;
-    // }
-    // .video-container video{ //copied
-    //     width: 100vw;
-    //     margin: -4rem 0;
-    //     opacity: 0.8;
-    // }
-
     .video-container{
-        // height: 9.5rem;
         height: 27vh;
         position: relative;
         overflow: hidden;
@@ -1247,7 +1218,6 @@ footer{
     }
     .video-container video{
         width: 100vw;
-        // margin: -2rem 0;
         position: absolute;
         transform: translateY(-15%);
         z-index: -30;
@@ -1282,7 +1252,7 @@ footer{
         grid-column:span 6;
     }
 
-    .cards{ //copied all cards
+    .cards{
         width: 20rem;
         height: 10rem;
         margin: 2rem auto 0 auto;
@@ -1302,7 +1272,6 @@ footer{
         min-width: 80px;
         margin-left: 0;
         padding: 1em 0 0 0;
-        // transform: translateX(1rem);
     }
     
     .sponsors p{
@@ -1313,7 +1282,6 @@ footer{
     
     .cards.expand{
         height: 20rem;
-        // transition: 0.5s;
     }
     
     .cards .cards-content{
@@ -1441,4 +1409,9 @@ footer{
     footer a{
         font-size: 1.2rem;
     }
+
+    // #carouselExampleControls{
+    //     width: 100%;
+    //     margin: 0 auto 5rem auto;
+    // }
 }
