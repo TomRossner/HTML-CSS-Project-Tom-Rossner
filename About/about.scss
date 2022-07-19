@@ -78,6 +78,7 @@ footer{
         width: 97%;
         border: 1px solid $color-white;
         padding: 1em;
+        margin: 1rem;
         border-radius: 10px;
         box-shadow: 0 0 8px 5px $color-white;
     }
@@ -128,6 +129,7 @@ footer{
         padding-bottom: 2em;
         box-shadow: none;
         border: none;
+        margin: 0;
     }
 
     .mayor-img{  
@@ -211,9 +213,5 @@ footer{
         box-shadow: none;
         border: none;
         margin: 0;
-    }
-
-    .grid-p{
-        margin: 1em;
     }
 }

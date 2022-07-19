@@ -1406,6 +1406,7 @@ footer {
     width: 97%;
     border: 1px solid #F2F2F2;
     padding: 1em;
+    margin: 1rem;
     border-radius: 10px;
     box-shadow: 0 0 8px 5px #F2F2F2;
   }
@@ -1448,6 +1449,7 @@ footer {
     padding-bottom: 2em;
     box-shadow: none;
     border: none;
+    margin: 0;
   }
   .mayor-img {
     width: 80%;
@@ -1515,8 +1517,5 @@ footer {
     box-shadow: none;
     border: none;
     margin: 0;
-  }
-  .grid-p {
-    margin: 1em;
   }
 }/*# sourceMappingURL=about.css.map */
