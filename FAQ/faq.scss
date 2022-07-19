@@ -138,11 +138,15 @@ footer{
         border: 1px solid $color-yellow;
     }
 }
+
+@media only screen and(min-width: 1280px) and(max-width: 1920px) {
+    .logo a img{
+        width: 8%;
+        z-index: 10;
+    }
+}
 @media only screen and(min-width: 1024px){
 
-    .logo a img{
-        width: 12%;
-    }
     .title{
         margin: 2.5rem auto;
     }

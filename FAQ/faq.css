@@ -1477,10 +1477,13 @@ footer {
     border: 1px solid #F2CC0F;
   }
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1280px) and (max-width: 1920px) {
   .logo a img {
-    width: 12%;
+    width: 8%;
+    z-index: 10;
   }
+}
+@media only screen and (min-width: 1024px) {
   .title {
     margin: 2.5rem auto;
   }
