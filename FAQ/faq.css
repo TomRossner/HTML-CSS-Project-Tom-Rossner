@@ -330,7 +330,6 @@ nav {
 
 .bi-chevron-right {
   font-size: 1.5rem;
-  padding: 4.2em 0.2em;
   transform: rotate(0deg);
   transition: transform 0.5s;
   cursor: pointer;
@@ -349,8 +348,14 @@ nav {
   align-items: center;
 }
 
-.chevron-container:active {
+.chevron-container:active,
+.chevron-container:hover {
   background: #dfdfdf;
+  cursor: pointer;
+}
+
+.chevron-container:focus-visible {
+  background: none;
 }
 
 footer {
@@ -1380,6 +1385,7 @@ footer {
   padding: 1rem;
   transform: rotate(0deg);
   transition: transform 0.5s;
+  cursor: pointer;
 }
 
 .bi.bi-chevron-down.rotate {
