@@ -106,8 +106,8 @@ nav {
   display: none;
 }
 
-#menu:hover {
-  background-color: #dfdfdf;
+#menu:active {
+  background-color: rgba(223, 223, 223, 0.4745098039);
 }
 
 .bi-list {
