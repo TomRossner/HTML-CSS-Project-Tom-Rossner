@@ -8,7 +8,7 @@
 }
 
 body {
-  width: 100%;
+  width: 100vw;
   min-height: 100vh;
 }
 
@@ -333,6 +333,7 @@ nav {
   padding: 4.2em 0.2em;
   transform: rotate(0deg);
   transition: transform 0.5s;
+  cursor: pointer;
 }
 
 .bi.bi-chevron-right.rotate {
@@ -348,9 +349,8 @@ nav {
   align-items: center;
 }
 
-.chevron-container:hover {
+.chevron-container:active {
   background: #dfdfdf;
-  cursor: pointer;
 }
 
 footer {
