@@ -75,6 +75,10 @@ nav {
   font-size: 1.8rem;
 }
 
+#navLinks li a:active {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 .logo a img {
   width: 25%;
   position: absolute;
@@ -103,8 +107,8 @@ nav {
   display: none;
 }
 
-#menu:hover {
-  background-color: #dfdfdf;
+#menu:active {
+  background-color: rgba(223, 223, 223, 0.4745098039);
 }
 
 .bi-list {
@@ -162,10 +166,10 @@ nav {
 .grid-p {
   text-align: center;
   font-family: "Assistant", sans-serif;
-  margin-bottom: 1rem;
   border: 1px solid #F2F2F2;
   padding: 1em;
   border-radius: 10px;
+  margin: 0 0.5rem 1rem 0.5rem;
   box-shadow: 0 0 8px 5px #F2F2F2;
 }
 
@@ -289,6 +293,13 @@ nav {
   cursor: pointer;
   position: relative;
   z-index: 990;
+  transition: background-color 0.2s;
+}
+
+.cards-content a:active {
+  background-color: black;
+  color: white;
+  transition: background-color 0.3s;
 }
 
 .cards.expand .cards-content a::after {
@@ -351,6 +362,12 @@ nav {
 
 .chevron-container:active {
   background: #dfdfdf;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+.chevron-container:focus-visible {
+  background: none;
 }
 
 footer {
@@ -443,6 +460,9 @@ footer {
   #navLinks li a {
     line-height: 3rem;
     padding: 0 1.5em;
+  }
+  #navLinks li a:active {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
   #navLinks li:hover {
     background-color: #dfdfdf;
@@ -603,6 +623,13 @@ footer {
     cursor: pointer;
     position: relative;
     z-index: 990;
+    transition: background-color 0.2s;
+  }
+  .cards-content a:hover,
+.cards-content a:active {
+    background-color: black;
+    color: white;
+    transition: background-color 0.3s;
   }
   .cards-content a::after {
     position: absolute;
@@ -659,6 +686,12 @@ footer {
     display: flex;
     align-items: center;
   }
+  .chevron-container:active,
+.chevron-container:hover {
+    background: #dfdfdf;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent !important;
+  }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1279px) {
   .main {
@@ -693,6 +726,9 @@ footer {
   }
   #navLinks li a {
     line-height: 3rem;
+  }
+  #navLinks li a:active {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
   .video-container {
     height: 65vh;
@@ -847,6 +883,12 @@ footer {
     cursor: pointer;
     position: relative;
     z-index: 990;
+    transition: background-color 0.2s;
+  }
+  .cards-content a:active {
+    background-color: black;
+    color: white;
+    transition: background-color 0.3s;
   }
   .cards-content a::after {
     position: absolute;
@@ -903,6 +945,10 @@ footer {
     display: flex;
     align-items: center;
   }
+  .chevron-container:active {
+    background: #dfdfdf;
+    -webkit-tap-highlight-color: transparent !important;
+  }
 }
 @media only screen and (min-width: 821px) and (max-width: 1023px) {
   .logo a img {
@@ -935,6 +981,9 @@ footer {
   #navLinks li a {
     line-height: 3rem;
     padding: 1em 0em;
+  }
+  #navLinks li a:active {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
   .video-container {
     height: 20vh;
@@ -1064,6 +1113,12 @@ footer {
     cursor: pointer;
     position: relative;
     z-index: 990;
+    transition: background-color 0.2s;
+  }
+  .cards-content a:active {
+    background-color: black;
+    color: white;
+    transition: background-color 0.3s;
   }
   .cards-content a::after {
     position: absolute;
@@ -1120,6 +1175,10 @@ footer {
     display: flex;
     align-items: center;
   }
+  .chevron-container:active {
+    background: #dfdfdf;
+    -webkit-tap-highlight-color: transparent !important;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 820px) {
   #menu,
@@ -1149,6 +1208,9 @@ footer {
   #navLinks li a {
     line-height: 3rem;
     padding: 1em 0.5em;
+  }
+  #navLinks li a:active {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
   .logo a img {
     width: 18%;
@@ -1288,6 +1350,12 @@ footer {
     cursor: pointer;
     position: relative;
     z-index: 990;
+    transition: background-color 0.2s;
+  }
+  .cards-content a:active {
+    background-color: black;
+    color: white;
+    transition: background-color 0.3s;
   }
   .cards-content a::after {
     position: absolute;
@@ -1343,6 +1411,10 @@ footer {
     width: 100%;
     display: flex;
     align-items: center;
+  }
+  .chevron-container:active {
+    background: #dfdfdf;
+    -webkit-tap-highlight-color: transparent !important;
   }
   #ul-footer li a {
     font-size: 1.6rem;
