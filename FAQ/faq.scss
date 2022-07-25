@@ -53,6 +53,10 @@
     cursor: pointer;
 }
 
+.cards .bi.bi-chevron-down:active{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
 .bi.bi-chevron-down.rotate{
     transform: rotate(540deg);
     transition: 0.5s;
@@ -206,6 +210,10 @@ footer{
         transition: transform 0.5s;
     }
     
+    .cards .bi.bi-chevron-down:active{
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+    }
+
     .bi.bi-chevron-down.rotate{
         transform: rotate(540deg);
         transition: 0.5s;
