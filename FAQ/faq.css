@@ -75,6 +75,10 @@ nav {
   font-size: 1.8rem;
 }
 
+#navLinks li a:active {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 .logo a img {
   width: 25%;
   position: absolute;
@@ -457,6 +461,9 @@ footer {
     line-height: 3rem;
     padding: 0 1.5em;
   }
+  #navLinks li a:active {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
   #navLinks li:hover {
     background-color: #dfdfdf;
   }
@@ -720,6 +727,9 @@ footer {
   #navLinks li a {
     line-height: 3rem;
   }
+  #navLinks li a:active {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
   .video-container {
     height: 65vh;
     position: relative;
@@ -972,6 +982,9 @@ footer {
     line-height: 3rem;
     padding: 1em 0em;
   }
+  #navLinks li a:active {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
   .video-container {
     height: 20vh;
     position: relative;
@@ -1195,6 +1208,9 @@ footer {
   #navLinks li a {
     line-height: 3rem;
     padding: 1em 0.5em;
+  }
+  #navLinks li a:active {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
   .logo a img {
     width: 18%;
@@ -1564,6 +1580,9 @@ footer {
 @media only screen and (min-width: 768px) {
   #navLinks li a {
     padding: 1em 0.5em;
+  }
+  #navLinks li a:active {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
   .cards {
     width: 60%;
