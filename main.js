@@ -13,6 +13,7 @@
 // }
 
 const menu = document.querySelector(".menu");
+const navLinks = document.getElementById("navLinks");
 
 
 menu.addEventListener("click", () => {
