@@ -98,6 +98,11 @@ nav {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+#menu:active {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background-color: rgba(223, 223, 223, 0.3294117647);
+}
+
 .x .line1 {
   transform: translateY(9px) rotateZ(-225deg);
 }

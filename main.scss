@@ -118,6 +118,11 @@ nav{
     z-index: 999;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
+
+  #menu:active{
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    background-color: #dfdfdf54;
+  }
   
   .x .line1{
     transform: translateY(9px) rotateZ(-225deg);
