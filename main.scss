@@ -104,45 +104,57 @@ nav{
 }
 
 #menu{
-    position: relative;
-    align-items: center;
-    line-height: 1;
-    width: 2.8rem;
-    height: 2.7rem;
-    overflow: hidden;
-    z-index: 999;
-}
-
-#menu.open{
+    width: 50px;
+    height: 50px;
     display: flex;
     flex-direction: column;
-}
-
-#hamburger{
-    display: initial;
-}
-#hamburger-close{
-    display: none;
-}
-
-#menu:active{
-    background-color: #dfdfdf79;
-}
-
-.bi-list{
-    color: #0D0D0D;
-    font-size: 2.8rem;
-    position: absolute;
-    transform: translateX(1.4rem);
+    padding: 0 0 0.2rem 0;
+    justify-content: center;
+    align-items: center;
     background-color: transparent;
-    border-bottom: 3px solid $color-yellow;
-}
-
-.bi-x{
-    font-size: 4rem;
-    position: absolute;
-    transform: translate(2rem, -0.6rem);
-}
+    cursor: pointer;
+  
+    position: static;
+    z-index: 999;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  
+  .x .line1{
+    transform: translateY(9px) rotateZ(-225deg);
+  }
+  
+  .x .line2{
+    transform: translateX(150%);
+    opacity: 0;
+  }
+  
+  .x .line3{
+    transform: translateY(-9px) rotateZ(225deg);
+  }
+  
+  .line{
+    width: 60%;
+    background-color: rgb(2, 2, 2);
+    height: 2.5px;
+    margin: 0.2rem 0;
+    transition: transform 0.5s ease, opacity 0.2s;
+  }
+  
+  @keyframes menuRotate {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+  }
+  
+  .x{
+    animation: menuRotate;
+    animation-delay: 0.1s;
+    animation-fill-mode: both;
+    animation-duration: 0.7s;
+  }
 
 // Main
 
